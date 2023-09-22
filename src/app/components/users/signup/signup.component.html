@@ -1,0 +1,78 @@
+<div class="container">
+    <form class="example-form">
+        <table class="example-full-width" cellspacing="0">
+            <tr>
+                <td><mat-form-field class="example-full-width">
+                        <mat-label>First name</mat-label>
+                        <input matInput>
+                    </mat-form-field></td>
+                <td><mat-form-field class="example-full-width">
+                        <mat-label>Last Name</mat-label>
+                        <input matInput>
+                    </mat-form-field></td>
+                <td>
+                    <p>
+                        <mat-form-field>
+                            <mat-label>Date Of Birth</mat-label>
+                            <input matInput [matDatepicker]="dp3" disabled>
+                            <mat-hint>MM/DD/YYYY</mat-hint>
+                            <mat-datepicker-toggle matIconSuffix [for]="dp3"></mat-datepicker-toggle>
+                            <mat-datepicker #dp3 disabled="false"></mat-datepicker>
+                        </mat-form-field>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <mat-form-field class="example-full-width">
+                <mat-label>Address</mat-label>
+                <textarea matInput placeholder="Ex. 100 Main St"></textarea>
+            </mat-form-field>
+        </p>
+
+        <table class="example-full-width" cellspacing="0">
+            <tr>
+                <td><mat-form-field class="example-full-width">
+                        <mat-label>City</mat-label>
+                        <input matInput placeholder="Ex. San Francisco">
+                    </mat-form-field></td>
+                <td><mat-form-field class="example-full-width">
+                        <mat-label>State</mat-label>
+                        <input matInput placeholder="Ex. California">
+                    </mat-form-field></td>
+            </tr>
+        </table>
+
+        <table class="example-full-width" cellspacing="0">
+            <tr>
+                <td>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Country</mat-label>
+                        <input matInput placeholder="Ex. INDIA">
+                    </mat-form-field>
+                </td>
+                <td><mat-form-field class="example-full-width">
+                        <mat-label>Postal Code</mat-label>
+                        <input matInput #postalCode maxlength="5" placeholder="Ex. 94105">
+                        <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+                    </mat-form-field></td>
+            </tr>
+        </table>
+
+        <table class="example-full-width" cellspacing="0">
+            <tr>
+                <td><mat-form-field class="example-full-width">
+                        <mat-label>Aadhar Number</mat-label>
+                        <input matInput placeholder="Ex. 4464 XXXX XXXX XXXX">
+                    </mat-form-field></td>
+
+                <td><mat-form-field class="example-full-width">
+                        <mat-label>Email</mat-label>
+                        <input matInput placeholder="Ex. john@email.com">
+                    </mat-form-field></td>
+            </tr>
+        </table>
+
+        <button type="button" class="btn btn-success">SUBMIT</button>
+    </form>
+</div>
