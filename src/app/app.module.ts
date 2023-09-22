@@ -22,7 +22,8 @@ import { DialogContentComponent } from './components/users/signup/dialog-content
 import { PassbookComponent } from './components/users/passbook/passbook.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { AccountBalanceComponent } from './components/users/account-balance/account-balance.component';
-
+import { CreditCardComponent } from './components/users/credit-card/credit-card.component';
+import { MatCardModule } from '@angular/material/card';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { AccountBalanceComponent } from './components/users/account-balance/acco
     DialogContentComponent,
     PassbookComponent,
     AccountBalanceComponent,
+    CreditCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,7 +52,8 @@ import { AccountBalanceComponent } from './components/users/account-balance/acco
     MatNativeDateModule,
     MatDialogModule,
     MatButtonModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
