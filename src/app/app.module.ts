@@ -21,6 +21,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { DialogContentComponent } from './components/users/signup/dialog-content/dialog-content.component';
 import { PassbookComponent } from './components/users/passbook/passbook.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { AccountBalanceComponent } from './components/users/account-balance/account-balance.component';
 
 
 
@@ -36,6 +37,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     TransferFundsComponent,
     DialogContentComponent,
     PassbookComponent,
+    AccountBalanceComponent,
   ],
   imports: [
     BrowserModule,

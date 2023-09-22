@@ -6,6 +6,7 @@ import { LoginComponent } from './components/users/login/login.component';
 import { SignupComponent } from './components/users/signup/signup.component';
 import { TransferFundsComponent } from './components/users/transfer-funds/transfer-funds.component';
 import { PassbookComponent } from './components/users/passbook/passbook.component';
+import { AccountBalanceComponent } from './components/users/account-balance/account-balance.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'customer/passbook',
     component: PassbookComponent
+  },
+  {
+    path: 'customer/balance',
+    component: AccountBalanceComponent
   }
 ];
 
