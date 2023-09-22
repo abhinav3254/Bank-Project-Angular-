@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 2rem auto;
+    padding: 1rem;
+
+}
+
+.home_loan_img {
+    height: 500px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.home_loan_img img {
+    height: 95%;
+    width: 100%;
+}
+
+.one {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid black;
+    transition: all 0.5s;
+    background-color: #388E3C;
+    text-align: center;
+}
+
+
+.one:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.one img {
+    width: 25%;
+    height: 25%;
+}
