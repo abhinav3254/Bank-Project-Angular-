@@ -4,6 +4,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AddInsuranceComponent } from './components/insurance/add-insurance/add-insurance.component';
 import { LoginComponent } from './components/users/login/login.component';
 import { SignupComponent } from './components/users/signup/signup.component';
+import { TransferFundsComponent } from './components/users/transfer-funds/transfer-funds.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'customer/sign-up',
     component: SignupComponent
+  },
+  {
+    path: 'customer/transfer-funds',
+    component: TransferFundsComponent
   }
 ];
 

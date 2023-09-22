@@ -1,0 +1,17 @@
+.container {
+    margin: 2rem auto;
+    border: 1px solid black;
+    padding: 2rem;
+}
+
+.example-form {
+    width: 100%;
+}
+
+.example-full-width {
+    width: 100%;
+}
+
+td {
+    padding-right: 8px;
+}

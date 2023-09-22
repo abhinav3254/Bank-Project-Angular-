@@ -15,6 +15,12 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { TransferFundsComponent } from './components/users/transfer-funds/transfer-funds.component';
+import { MatDialogModule, MatDialog } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+import { DialogContentComponent } from './components/users/signup/dialog-content/dialog-content.component';
+
+
 
 @NgModule({
   declarations: [
@@ -25,6 +31,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     AddInsuranceComponent,
     LoginComponent,
     SignupComponent,
+    TransferFundsComponent,
+    DialogContentComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +42,9 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatFormFieldModule,
     FormsModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatDialogModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
