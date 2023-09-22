@@ -19,6 +19,8 @@ import { TransferFundsComponent } from './components/users/transfer-funds/transf
 import { MatDialogModule, MatDialog } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { DialogContentComponent } from './components/users/signup/dialog-content/dialog-content.component';
+import { PassbookComponent } from './components/users/passbook/passbook.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 
 
@@ -33,6 +35,7 @@ import { DialogContentComponent } from './components/users/signup/dialog-content
     SignupComponent,
     TransferFundsComponent,
     DialogContentComponent,
+    PassbookComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,6 +48,7 @@ import { DialogContentComponent } from './components/users/signup/dialog-content
     MatNativeDateModule,
     MatDialogModule,
     MatButtonModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
