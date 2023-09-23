@@ -1,0 +1,25 @@
+.conatiner {
+    margin: 5rem;
+
+}
+
+.show-balance {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 5rem;
+}
+
+.show-balance img {
+    width: 15%;
+}
+
+.right {
+    width: 80%;
+    margin: 1rem auto;
+}
+
+p {
+    color: black;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1rem;
+}

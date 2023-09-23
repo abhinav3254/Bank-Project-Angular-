@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./deposit-funds.component.css']
 })
 export class DepositFundsComponent {
-
+  hide = true;
 }

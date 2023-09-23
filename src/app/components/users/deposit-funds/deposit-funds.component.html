@@ -1,1 +1,39 @@
-<p>deposit-funds works!</p>
+<mat-card style="text-align: center;">
+    <mat-card-content>
+        <h1>Deposit Funds</h1>
+    </mat-card-content>
+</mat-card>
+
+<div class="conatiner">
+    <form class="example-form">
+        <mat-form-field class="example-full-width to-be-expanded">
+            <mat-label>Account Number</mat-label>
+            <input matInput #message maxlength="8" placeholder="Ex. 1234.....">
+            <mat-hint align="start"><strong>Enter Your Account Number</strong> </mat-hint>
+            <mat-hint align="end">{{message.value.length}} / 8</mat-hint>
+        </mat-form-field>
+
+        <div class="example-container">
+            <mat-form-field floatLabel="always" class="to-be-expanded">
+                <mat-label>Amount</mat-label>
+                <input matInput type="number" class="example-right-align" placeholder="0">
+                <span matTextPrefix>₹&nbsp;</span>
+                <span matTextSuffix>.00</span>
+            </mat-form-field>
+        </div>
+
+        <div class="example-container">
+            <mat-form-field class="to-be-expanded">
+                <mat-label>Enter your password</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'" placeholder="password">
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                    [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+        </div>
+
+        <button type="button" class="btn btn-success">Add Money</button>
+
+    </form>
+</div>

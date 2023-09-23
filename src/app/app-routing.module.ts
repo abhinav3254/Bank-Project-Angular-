@@ -18,6 +18,7 @@ import { AdminLoginComponent } from './components/admin/admin-login/admin-login.
 import { AdminManagerComponent } from './components/admin/admin-manager/admin-manager.component';
 import { ManagerListComponent } from './components/admin/manager-list/manager-list.component';
 import { OpenSavingsAccountComponent } from './components/accounts/open-savings-account/open-savings-account.component';
+import { OpenCurrentAccountsComponent } from './components/accounts/open-current-accounts/open-current-accounts.component';
 
 const routes: Routes = [
   {
@@ -63,6 +64,10 @@ const routes: Routes = [
   {
     path: 'customer/open-savings-account',
     component: OpenSavingsAccountComponent
+  },
+  {
+    path: 'customer/open-current-account',
+    component: OpenCurrentAccountsComponent
   },
   // Manager path should come here
   {

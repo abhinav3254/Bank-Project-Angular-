@@ -1,1 +1,116 @@
-<p>open-current-accounts works!</p>
+<div class="container">
+    <form class="example-form">
+        <h4 style="margin: 1rem 0px;">Current Account Application Form</h4>
+        <table class="example-full-width" cellspacing="0">
+            <tr>
+                <td><mat-form-field class="example-full-width">
+                        <mat-label>Enter Mobile Number</mat-label>
+                        <input matInput placeholder="Ex. 91XXXXXXXXX">
+                    </mat-form-field></td>
+                <td><mat-form-field class="example-full-width">
+                        <mat-label>Email Address</mat-label>
+                        <input matInput placeholder="Ex. example@mail.com">
+                    </mat-form-field></td>
+            </tr>
+        </table>
+
+        <table class="example-full-width" cellspacing="0">
+            <tr>
+                <td>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>PAN(Permanent Account Number)</mat-label>
+                        <input matInput placeholder="Ex. MNZX......">
+                    </mat-form-field>
+                </td>
+                <td><mat-form-field class="example-full-width">
+                        <mat-label>Aadhar Number</mat-label>
+                        <input type="number" matInput placeholder="Ex. 4464 XXXX XXXX XXXX">
+                    </mat-form-field></td>
+            </tr>
+        </table>
+
+        <mat-card class="one-one-card">
+            <mat-card-content>
+                <h1>Please enter your professional & personal details</h1>
+            </mat-card-content>
+        </mat-card>
+
+        <table class="example-full-width" cellspacing="0">
+            <tr>
+                <td><mat-form-field class="example-full-width">
+                        <mat-label>Mother's Name</mat-label>
+                        <input type="text" matInput placeholder="Ex. Mother's Name">
+                    </mat-form-field></td>
+                <td><mat-form-field class="example-full-width">
+                        <mat-label>Gross Annual Income</mat-label>
+                        <input type="number" matInput placeholder="Ex. ₹ 5000000">
+                    </mat-form-field></td>
+            </tr>
+        </table>
+
+        <table class="example-full-width" cellspacing="0">
+            <tr>
+                <td><mat-form-field class="to-expand-mat-select">
+                        <mat-label>profession</mat-label>
+                        <mat-select>
+                            <mat-option *ngFor="let food of foods" [value]="food.value">
+                                {{food.viewValue}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field></td>
+                <td><mat-form-field class="to-expand-mat-select">
+                        <mat-label>Source Of Income</mat-label>
+                        <mat-select>
+                            <mat-option *ngFor="let food of foods" [value]="food.value">
+                                {{food.viewValue}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field></td>
+            </tr>
+        </table>
+
+
+        <mat-card>
+            <mat-card-content>
+                <h4>Each product gives you</h4>
+                <div class="main-one-product">
+                    <div class="one-two-product">
+                        <img src="assets/icons/done.svg" alt="">
+                        <p>Up to 15% p.a. interest</p>
+                    </div>
+                    <div class="one-two-product">
+                        <img src="assets/icons/done.svg" alt="">
+                        <p>Get upto Overdraft limit of 1cr+</p>
+                    </div>
+                    <div class="one-two-product">
+                        <img src="assets/icons/done.svg" alt="">
+                        <p>No Charges on 28+ services</p>
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+
+        <h2 class="one-one-disclaimer">Disclaimer</h2>
+
+        <mat-card class="one-one-disclaimer-content">
+            <mat-card-content>
+                <p>I confirm that I am not a politically exposed person nor related to one (required as per RBI
+                    guideline).
+                    For any change, I will visit the nearest branch and update my details.</p>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card class="one-one-disclaimer-content">
+            <mat-card-content>
+                <p>
+                    I confirm that I am an Indian citizen, born in India and a tax resident of India (required as per
+                    RBI guideline). For any change, I will visit the nearest branch and update my details.
+                </p>
+            </mat-card-content>
+        </mat-card>
+
+        <button type="button" class="btn btn-success">SUBMIT</button>
+    </form>
+</div>
+
+<div class="extra-rough"></div>
