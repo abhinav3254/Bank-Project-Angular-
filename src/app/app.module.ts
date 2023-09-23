@@ -35,7 +35,9 @@ import { WithdrawFundsComponent } from './components/users/withdraw-funds/withdr
 import { AdminLoginComponent } from './components/admin/admin-login/admin-login.component';
 import { AdminManagerComponent } from './components/admin/admin-manager/admin-manager.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ManagerListComponent } from './components/admin/manager-list/manager-list.component'
+import { ManagerListComponent } from './components/admin/manager-list/manager-list.component';
+import { OpenSavingsAccountComponent } from './components/accounts/open-savings-account/open-savings-account.component';
+import { OpenCurrentAccountsComponent } from './components/accounts/open-current-accounts/open-current-accounts.component'
 
 
 
@@ -62,6 +64,8 @@ import { ManagerListComponent } from './components/admin/manager-list/manager-li
     AdminLoginComponent,
     AdminManagerComponent,
     ManagerListComponent,
+    OpenSavingsAccountComponent,
+    OpenCurrentAccountsComponent,
   ],
   imports: [
     BrowserModule,
