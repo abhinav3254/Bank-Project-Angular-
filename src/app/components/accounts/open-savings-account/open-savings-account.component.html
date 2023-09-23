@@ -1,15 +1,15 @@
 <div class="container">
-    <form class="example-form">
+    <form #MyForm="ngForm" (submit)="applyForSavingAccount(MyForm)" class="example-form">
         <h4 style="margin: 1rem 0px;">Saving Account Application Form</h4>
         <table class="example-full-width" cellspacing="0">
             <tr>
                 <td><mat-form-field class="example-full-width">
                         <mat-label>Enter Mobile Number</mat-label>
-                        <input matInput placeholder="Ex. 91XXXXXXXXX">
+                        <input ngModel name="mobile" matInput placeholder="Ex. 91XXXXXXXXX">
                     </mat-form-field></td>
                 <td><mat-form-field class="example-full-width">
                         <mat-label>Email Address</mat-label>
-                        <input matInput placeholder="Ex. example@mail.com">
+                        <input ngModel name="email" matInput placeholder="Ex. example@mail.com">
                     </mat-form-field></td>
             </tr>
         </table>
@@ -19,12 +19,12 @@
                 <td>
                     <mat-form-field class="example-full-width">
                         <mat-label>PAN(Permanent Account Number)</mat-label>
-                        <input matInput placeholder="Ex. MNZX......">
+                        <input ngModel name="pan" matInput placeholder="Ex. MNZX......">
                     </mat-form-field>
                 </td>
                 <td><mat-form-field class="example-full-width">
                         <mat-label>Aadhar Number</mat-label>
-                        <input type="number" matInput placeholder="Ex. 4464 XXXX XXXX XXXX">
+                        <input ngModel name="aadhar" type="number" matInput placeholder="Ex. 4464 XXXX XXXX XXXX">
                     </mat-form-field></td>
             </tr>
         </table>
@@ -39,11 +39,11 @@
             <tr>
                 <td><mat-form-field class="example-full-width">
                         <mat-label>Mother's Name</mat-label>
-                        <input type="text" matInput placeholder="Ex. Mother's Name">
+                        <input ngModel name="mother" type="text" matInput placeholder="Ex. Mother's Name">
                     </mat-form-field></td>
                 <td><mat-form-field class="example-full-width">
                         <mat-label>Gross Annual Income</mat-label>
-                        <input type="number" matInput placeholder="Ex. ₹ 5000000">
+                        <input ngModel name="annualIncome" type="number" matInput placeholder="Ex. ₹ 5000000">
                     </mat-form-field></td>
             </tr>
         </table>
@@ -52,17 +52,17 @@
             <tr>
                 <td><mat-form-field class="to-expand-mat-select">
                         <mat-label>profession</mat-label>
-                        <mat-select>
-                            <mat-option *ngFor="let food of foods" [value]="food.value">
-                                {{food.viewValue}}
+                        <mat-select ngModel name="profession">
+                            <mat-option *ngFor="let p of profession" [value]="p.value">
+                                {{p.viewValue}}
                             </mat-option>
                         </mat-select>
                     </mat-form-field></td>
                 <td><mat-form-field class="to-expand-mat-select">
                         <mat-label>Source Of Income</mat-label>
-                        <mat-select>
-                            <mat-option *ngFor="let food of foods" [value]="food.value">
-                                {{food.viewValue}}
+                        <mat-select ngModel name="sourceOfIncome">
+                            <mat-option *ngFor="let s of sourceIncome" [value]="s.value">
+                                {{s.viewValue}}
                             </mat-option>
                         </mat-select>
                     </mat-form-field></td>
@@ -109,8 +109,10 @@
             </mat-card-content>
         </mat-card>
 
-        <button type="button" class="btn btn-success">SUBMIT</button>
+        <button type="submit" value="submit" class="btn btn-success">SUBMIT</button>
     </form>
+
 </div>
 
-<div class="extra-rough"></div>
+<div class="extra-rough">
+</div>
