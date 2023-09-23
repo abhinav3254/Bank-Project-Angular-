@@ -30,6 +30,9 @@ import { ModifyGiftCardComponent } from './components/manager/modify-gift-card/m
 import { ManagerLogInComponent } from './components/manager/manager-log-in/manager-log-in.component';
 import { ManagerSignUpComponent } from './components/manager/manager-sign-up/manager-sign-up.component';
 import { MatSelectModule } from '@angular/material/select';
+import { DepositFundsComponent } from './components/users/deposit-funds/deposit-funds.component';
+import { WithdrawFundsComponent } from './components/users/withdraw-funds/withdraw-funds.component';
+
 
 
 
@@ -51,6 +54,8 @@ import { MatSelectModule } from '@angular/material/select';
     ModifyGiftCardComponent,
     ManagerLogInComponent,
     ManagerSignUpComponent,
+    DepositFundsComponent,
+    WithdrawFundsComponent,
   ],
   imports: [
     BrowserModule,

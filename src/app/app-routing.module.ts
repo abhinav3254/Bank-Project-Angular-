@@ -12,6 +12,8 @@ import { AddGiftCardComponent } from './components/manager/add-gift-card/add-gif
 import { ModifyGiftCardComponent } from './components/manager/modify-gift-card/modify-gift-card.component';
 import { ManagerLogInComponent } from './components/manager/manager-log-in/manager-log-in.component';
 import { ManagerSignUpComponent } from './components/manager/manager-sign-up/manager-sign-up.component';
+import { DepositFundsComponent } from './components/users/deposit-funds/deposit-funds.component';
+import { WithdrawFundsComponent } from './components/users/withdraw-funds/withdraw-funds.component';
 
 const routes: Routes = [
   {
@@ -45,6 +47,14 @@ const routes: Routes = [
   {
     path: 'customer/credit-card',
     component: CreditCardComponent
+  },
+  {
+    path: 'customer/depost-fund',
+    component: DepositFundsComponent
+  },
+  {
+    path: 'customer/withdraw-fund',
+    component: WithdrawFundsComponent
   },
   // Manager path should come here
   {
