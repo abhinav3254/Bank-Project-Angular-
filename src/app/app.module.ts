@@ -40,6 +40,7 @@ import { OpenSavingsAccountComponent } from './components/accounts/open-savings-
 import { OpenCurrentAccountsComponent } from './components/accounts/open-current-accounts/open-current-accounts.component'
 import { MatIconModule } from '@angular/material/icon';
 import { GiftCardStoreComponent } from './components/accounts/gift-card-store/gift-card-store.component';
+import { MatMenuModule } from '@angular/material/menu';
 
 
 
@@ -86,7 +87,8 @@ import { GiftCardStoreComponent } from './components/accounts/gift-card-store/gi
     MatExpansionModule,
     MatSelectModule,
     HttpClientModule,
-    MatIconModule
+    MatIconModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
