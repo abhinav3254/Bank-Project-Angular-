@@ -32,7 +32,9 @@ import { ManagerSignUpComponent } from './components/manager/manager-sign-up/man
 import { MatSelectModule } from '@angular/material/select';
 import { DepositFundsComponent } from './components/users/deposit-funds/deposit-funds.component';
 import { WithdrawFundsComponent } from './components/users/withdraw-funds/withdraw-funds.component';
-
+import { AdminLoginComponent } from './components/admin/admin-login/admin-login.component';
+import { AdminManagerComponent } from './components/admin/admin-manager/admin-manager.component';
+import { HttpClientModule } from '@angular/common/http'
 
 
 
@@ -56,6 +58,8 @@ import { WithdrawFundsComponent } from './components/users/withdraw-funds/withdr
     ManagerSignUpComponent,
     DepositFundsComponent,
     WithdrawFundsComponent,
+    AdminLoginComponent,
+    AdminManagerComponent,
   ],
   imports: [
     BrowserModule,
@@ -72,6 +76,7 @@ import { WithdrawFundsComponent } from './components/users/withdraw-funds/withdr
     MatCardModule,
     MatExpansionModule,
     MatSelectModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

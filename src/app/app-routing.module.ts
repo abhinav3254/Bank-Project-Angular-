@@ -14,6 +14,8 @@ import { ManagerLogInComponent } from './components/manager/manager-log-in/manag
 import { ManagerSignUpComponent } from './components/manager/manager-sign-up/manager-sign-up.component';
 import { DepositFundsComponent } from './components/users/deposit-funds/deposit-funds.component';
 import { WithdrawFundsComponent } from './components/users/withdraw-funds/withdraw-funds.component';
+import { AdminLoginComponent } from './components/admin/admin-login/admin-login.component';
+import { AdminManagerComponent } from './components/admin/admin-manager/admin-manager.component';
 
 const routes: Routes = [
   {
@@ -73,6 +75,15 @@ const routes: Routes = [
     path: 'manager/modify-gift-card',
     component: ModifyGiftCardComponent
   },
+  // admin
+  {
+    path: 'admin/login-in',
+    component: AdminLoginComponent
+  },
+  {
+    path: 'admin/manager',
+    component: AdminManagerComponent
+  }
 ];
 
 @NgModule({

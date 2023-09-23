@@ -1,0 +1,21 @@
+<div class="conatiner">
+    <p>Managers Waiting For Approval :- {{userArrayLength}}</p>
+    <mat-accordion *ngFor="let user of users">
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    {{user.name}}
+                </mat-panel-title>
+                <mat-panel-description>
+                    Tap to {{panelOpenState ? 'collapse and hide details' : 'expand and view details'}}
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p>{{user.phone}}</p>
+            <p>{{user.email}}</p>
+            <div class="ex-btn">
+                <button type="button" class="btn btn-success" (click)="approveRequest(user.id)">Approve</button>
+                <button type="button" class="btn btn-danger" (click)="declineRequest()">Decline</button>
+            </div>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
