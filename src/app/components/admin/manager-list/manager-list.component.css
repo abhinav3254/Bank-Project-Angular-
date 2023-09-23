@@ -1,0 +1,14 @@
+.conatiner {
+    margin: 2rem auto;
+    width: 80%;
+}
+
+.mat-mdc-form-field+.mat-mdc-form-field {
+    margin-left: 8px;
+}
+
+.ex-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

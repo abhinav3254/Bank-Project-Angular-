@@ -34,7 +34,8 @@ import { DepositFundsComponent } from './components/users/deposit-funds/deposit-
 import { WithdrawFundsComponent } from './components/users/withdraw-funds/withdraw-funds.component';
 import { AdminLoginComponent } from './components/admin/admin-login/admin-login.component';
 import { AdminManagerComponent } from './components/admin/admin-manager/admin-manager.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { ManagerListComponent } from './components/admin/manager-list/manager-list.component'
 
 
 
@@ -60,6 +61,7 @@ import { HttpClientModule } from '@angular/common/http'
     WithdrawFundsComponent,
     AdminLoginComponent,
     AdminManagerComponent,
+    ManagerListComponent,
   ],
   imports: [
     BrowserModule,

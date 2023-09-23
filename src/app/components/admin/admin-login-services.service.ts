@@ -20,7 +20,7 @@ export class AdminLoginServicesService {
     return this.http.get(url, { headers: header });
   }
 
-  public getAllManagerRequest(): Observable<any> {
+  public getAllManager(): Observable<any> {
     const url = 'http://localhost:9092/user/admin/all-manager';
     var header = new HttpHeaders().set("Authorization", "Bearer " + window.localStorage.getItem("token"));
     return this.http.get(url, { headers: header });
