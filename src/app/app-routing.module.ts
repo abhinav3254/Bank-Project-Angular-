@@ -8,6 +8,10 @@ import { TransferFundsComponent } from './components/users/transfer-funds/transf
 import { PassbookComponent } from './components/users/passbook/passbook.component';
 import { AccountBalanceComponent } from './components/users/account-balance/account-balance.component';
 import { CreditCardComponent } from './components/users/credit-card/credit-card.component';
+import { AddGiftCardComponent } from './components/manager/add-gift-card/add-gift-card.component';
+import { ModifyGiftCardComponent } from './components/manager/modify-gift-card/modify-gift-card.component';
+import { ManagerLogInComponent } from './components/manager/manager-log-in/manager-log-in.component';
+import { ManagerSignUpComponent } from './components/manager/manager-sign-up/manager-sign-up.component';
 
 const routes: Routes = [
   {
@@ -41,7 +45,24 @@ const routes: Routes = [
   {
     path: 'customer/credit-card',
     component: CreditCardComponent
-  }
+  },
+  // Manager path should come here
+  {
+    path: 'manager/login-in',
+    component: ManagerLogInComponent
+  },
+  {
+    path: 'manager/sign-up',
+    component: ManagerSignUpComponent
+  },
+  {
+    path: 'manager/add-gift-card',
+    component: AddGiftCardComponent
+  },
+  {
+    path: 'manager/modify-gift-card',
+    component: ModifyGiftCardComponent
+  },
 ];
 
 @NgModule({

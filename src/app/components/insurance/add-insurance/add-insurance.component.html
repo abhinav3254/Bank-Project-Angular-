@@ -1,12 +1,24 @@
 <div class="container">
-    <div class="mb-3">
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name of Insurance">
-        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Premium Amount">
-        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Coverage Amount">
-        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Number Of Members Covered">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-            placeholder="Description of Insurance"></textarea>
-        <button type="button" class="btn btn-success">Success</button>
-    </div>
+
+    <form action="">
+        <div class="mb-3">
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name of Insurance">
+            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Premium Amount">
+            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Coverage Amount">
+            <input type="number" class="form-control" id="exampleFormControlInput1"
+                placeholder="Number Of Members Covered">
+
+            <select matNativeControl placeholder="Insurance Category">
+                <option value="" selected disabled>Insurance Category</option>
+                <option value="volvo">Life Insurance</option>
+                <option value="saab" disabled>Term Insurance</option>
+                <option value="mercedes">Vehicle Insurance</option>
+            </select>
+
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                placeholder="Description of Insurance"></textarea>
+            <button type="button" class="btn btn-success">Success</button>
+        </div>
+    </form>
 
 </div>

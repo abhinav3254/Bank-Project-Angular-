@@ -16,7 +16,7 @@ import { FormsModule } from '@angular/forms';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { TransferFundsComponent } from './components/users/transfer-funds/transfer-funds.component';
-import { MatDialogModule, MatDialog } from '@angular/material/dialog';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { DialogContentComponent } from './components/users/signup/dialog-content/dialog-content.component';
 import { PassbookComponent } from './components/users/passbook/passbook.component';
@@ -24,6 +24,13 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { AccountBalanceComponent } from './components/users/account-balance/account-balance.component';
 import { CreditCardComponent } from './components/users/credit-card/credit-card.component';
 import { MatCardModule } from '@angular/material/card';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { AddGiftCardComponent } from './components/manager/add-gift-card/add-gift-card.component';
+import { ModifyGiftCardComponent } from './components/manager/modify-gift-card/modify-gift-card.component';
+import { ManagerLogInComponent } from './components/manager/manager-log-in/manager-log-in.component';
+import { ManagerSignUpComponent } from './components/manager/manager-sign-up/manager-sign-up.component';
+import { MatSelectModule } from '@angular/material/select';
+
 
 
 @NgModule({
@@ -40,6 +47,10 @@ import { MatCardModule } from '@angular/material/card';
     PassbookComponent,
     AccountBalanceComponent,
     CreditCardComponent,
+    AddGiftCardComponent,
+    ModifyGiftCardComponent,
+    ManagerLogInComponent,
+    ManagerSignUpComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,7 +64,9 @@ import { MatCardModule } from '@angular/material/card';
     MatDialogModule,
     MatButtonModule,
     MatPaginatorModule,
-    MatCardModule
+    MatCardModule,
+    MatExpansionModule,
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

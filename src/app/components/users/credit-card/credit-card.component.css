@@ -6,3 +6,11 @@
 .example-card {
     max-width: 100%;
 }
+
+mat-card {
+    margin: 1rem auto;
+}
+
+mat-accordion {
+    margin: 1rem auto;
+}
