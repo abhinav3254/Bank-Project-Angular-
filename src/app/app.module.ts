@@ -43,6 +43,10 @@ import { GiftCardStoreComponent } from './components/accounts/gift-card-store/gi
 import { MatMenuModule } from '@angular/material/menu';
 import { SavingAccountRequestComponent } from './components/manager/saving-account-request/saving-account-request.component';
 import { CurrentAccountRequestComponent } from './components/manager/current-account-request/current-account-request.component';
+import { HomeLoanComponent } from './components/loans/home-loan/home-loan.component';
+import { PersonalLoanComponent } from './components/loans/personal-loan/personal-loan.component';
+import { StudentloanComponent } from './components/loans/studentloan/studentloan.component';
+import { VehiceloanComponent } from './components/loans/vehiceloan/vehiceloan.component';
 
 
 
@@ -75,6 +79,10 @@ import { CurrentAccountRequestComponent } from './components/manager/current-acc
     GiftCardStoreComponent,
     SavingAccountRequestComponent,
     CurrentAccountRequestComponent,
+    HomeLoanComponent,
+    PersonalLoanComponent,
+    StudentloanComponent,
+    VehiceloanComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,81 @@
+.container {
+    margin: 4rem auto;
+    padding: 2rem;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.example-form {
+    width: 100%;
+    text-align: center;
+}
+
+.example-full-width {
+    width: 100%;
+}
+
+td {
+    padding-right: 8px;
+}
+
+.btn {
+    margin: 2rem auto;
+}
+
+.to-expand-mat-select {
+    width: 100%;
+}
+
+.one-one-card {
+    margin: 2rem 1rem;
+}
+
+.one-one-card h1 {
+    font-size: 1rem;
+}
+
+
+.one-one-disclaimer {
+    margin: 2rem 1rem;
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+.one-one-disclaimer-content {
+    margin: 2rem 1rem;
+}
+
+.one-one-disclaimer-content p {
+    font-size: 0.8rem;
+}
+
+.main-one-product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px 5px;
+}
+
+.one-two-product {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.one-two-product img {
+    width: 24px;
+    height: 24px;
+    margin: 2px;
+}
+
+.one-two-product p {
+    font-size: 1rem;
+    margin: 2px;
+}
+
+.extra-rough {
+    margin-bottom: 10rem;
+    height: 2rem;
+}

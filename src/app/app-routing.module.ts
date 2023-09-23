@@ -22,6 +22,10 @@ import { OpenCurrentAccountsComponent } from './components/accounts/open-current
 import { GiftCardStoreComponent } from './components/accounts/gift-card-store/gift-card-store.component';
 import { SavingAccountRequestComponent } from './components/manager/saving-account-request/saving-account-request.component';
 import { CurrentAccountRequestComponent } from './components/manager/current-account-request/current-account-request.component';
+import { HomeLoanComponent } from './components/loans/home-loan/home-loan.component';
+import { PersonalLoanComponent } from './components/loans/personal-loan/personal-loan.component';
+import { VehiceloanComponent } from './components/loans/vehiceloan/vehiceloan.component';
+import { StudentloanComponent } from './components/loans/studentloan/studentloan.component';
 
 const routes: Routes = [
   {
@@ -75,6 +79,22 @@ const routes: Routes = [
   {
     path: 'customer/gift-cards',
     component: GiftCardStoreComponent
+  },
+  {
+    path: 'customer/apply-home-loan',
+    component: HomeLoanComponent
+  },
+  {
+    path: 'customer/apply-personal-loan',
+    component: PersonalLoanComponent
+  },
+  {
+    path: 'customer/apply-vehicle-loan',
+    component: VehiceloanComponent
+  },
+  {
+    path: 'customer/apply-student-loan',
+    component: StudentloanComponent
   },
   // Manager path should come here
   {
