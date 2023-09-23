@@ -47,6 +47,10 @@ import { HomeLoanComponent } from './components/loans/home-loan/home-loan.compon
 import { PersonalLoanComponent } from './components/loans/personal-loan/personal-loan.component';
 import { StudentloanComponent } from './components/loans/studentloan/studentloan.component';
 import { VehiceloanComponent } from './components/loans/vehiceloan/vehiceloan.component';
+import { VehicleComponent } from './components/manager/loan-approve/vehicle/vehicle.component';
+import { StudentComponent } from './components/manager/loan-approve/student/student.component';
+import { PersonalComponent } from './components/manager/loan-approve/personal/personal.component';
+import { HomeApproveComponent } from './components/manager/loan-approve/home-approve/home-approve.component';
 
 
 
@@ -83,6 +87,10 @@ import { VehiceloanComponent } from './components/loans/vehiceloan/vehiceloan.co
     PersonalLoanComponent,
     StudentloanComponent,
     VehiceloanComponent,
+    VehicleComponent,
+    StudentComponent,
+    PersonalComponent,
+    HomeApproveComponent,
   ],
   imports: [
     BrowserModule,

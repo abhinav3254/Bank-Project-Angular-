@@ -26,6 +26,11 @@ import { HomeLoanComponent } from './components/loans/home-loan/home-loan.compon
 import { PersonalLoanComponent } from './components/loans/personal-loan/personal-loan.component';
 import { VehiceloanComponent } from './components/loans/vehiceloan/vehiceloan.component';
 import { StudentloanComponent } from './components/loans/studentloan/studentloan.component';
+import { PersonalComponent } from './components/manager/loan-approve/personal/personal.component';
+import { VehicleComponent } from './components/manager/loan-approve/vehicle/vehicle.component';
+import { StudentComponent } from './components/manager/loan-approve/student/student.component';
+import { HomeApproveComponent } from './components/manager/loan-approve/home-approve/home-approve.component';
+
 
 const routes: Routes = [
   {
@@ -120,6 +125,22 @@ const routes: Routes = [
   {
     path: 'manager/current-account-request',
     component: CurrentAccountRequestComponent
+  },
+  {
+    path: 'manager/approve-loan-personal',
+    component: PersonalComponent
+  },
+  {
+    path: 'manager/approve-loan-vehicle',
+    component: VehicleComponent
+  },
+  {
+    path: 'manager/approve-loan-student',
+    component: StudentComponent
+  },
+  {
+    path: 'manager/approve-loan-home',
+    component: HomeApproveComponent
   },
   // admin
   {
