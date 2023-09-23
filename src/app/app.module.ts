@@ -39,6 +39,7 @@ import { ManagerListComponent } from './components/admin/manager-list/manager-li
 import { OpenSavingsAccountComponent } from './components/accounts/open-savings-account/open-savings-account.component';
 import { OpenCurrentAccountsComponent } from './components/accounts/open-current-accounts/open-current-accounts.component'
 import { MatIconModule } from '@angular/material/icon';
+import { GiftCardStoreComponent } from './components/accounts/gift-card-store/gift-card-store.component';
 
 
 
@@ -67,6 +68,7 @@ import { MatIconModule } from '@angular/material/icon';
     ManagerListComponent,
     OpenSavingsAccountComponent,
     OpenCurrentAccountsComponent,
+    GiftCardStoreComponent,
   ],
   imports: [
     BrowserModule,

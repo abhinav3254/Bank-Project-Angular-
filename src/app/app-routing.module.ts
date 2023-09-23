@@ -19,6 +19,7 @@ import { AdminManagerComponent } from './components/admin/admin-manager/admin-ma
 import { ManagerListComponent } from './components/admin/manager-list/manager-list.component';
 import { OpenSavingsAccountComponent } from './components/accounts/open-savings-account/open-savings-account.component';
 import { OpenCurrentAccountsComponent } from './components/accounts/open-current-accounts/open-current-accounts.component';
+import { GiftCardStoreComponent } from './components/accounts/gift-card-store/gift-card-store.component';
 
 const routes: Routes = [
   {
@@ -68,6 +69,10 @@ const routes: Routes = [
   {
     path: 'customer/open-current-account',
     component: OpenCurrentAccountsComponent
+  },
+  {
+    path: 'customer/gift-cards',
+    component: GiftCardStoreComponent
   },
   // Manager path should come here
   {
