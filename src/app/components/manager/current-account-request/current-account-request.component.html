@@ -1,0 +1,18 @@
+<div class="conatiner">
+    <mat-accordion class="one-one" *ngFor="let request of savingAccounts">
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Request Id:{{request.id}}
+                </mat-panel-title>
+                <mat-panel-description>
+                    tap to {{panelOpenState ? 'close' : 'open'}}
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p>{{request.user.name}}</p>
+            <p>{{request.profession}}</p>
+            <p>{{request.sourceOfIncome}}</p>
+            <p>{{request.dateOfApply | date}}</p>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>

@@ -1,0 +1,11 @@
+.conatiner {
+    margin: 5rem;
+}
+
+.one-one {
+    margin: 2rem;
+}
+
+.mat-mdc-form-field+.mat-mdc-form-field {
+    margin-left: 8px;
+}

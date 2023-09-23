@@ -41,6 +41,8 @@ import { OpenCurrentAccountsComponent } from './components/accounts/open-current
 import { MatIconModule } from '@angular/material/icon';
 import { GiftCardStoreComponent } from './components/accounts/gift-card-store/gift-card-store.component';
 import { MatMenuModule } from '@angular/material/menu';
+import { SavingAccountRequestComponent } from './components/manager/saving-account-request/saving-account-request.component';
+import { CurrentAccountRequestComponent } from './components/manager/current-account-request/current-account-request.component';
 
 
 
@@ -71,6 +73,8 @@ import { MatMenuModule } from '@angular/material/menu';
     OpenSavingsAccountComponent,
     OpenCurrentAccountsComponent,
     GiftCardStoreComponent,
+    SavingAccountRequestComponent,
+    CurrentAccountRequestComponent,
   ],
   imports: [
     BrowserModule,

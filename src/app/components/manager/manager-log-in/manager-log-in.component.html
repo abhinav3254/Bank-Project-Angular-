@@ -1,9 +1,13 @@
 <div class="container">
-    <div class="mb-3">
-        <p>Manager Login</p>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="password">
-    </div>
-    <button type="button" class="btn btn-success">Log In</button>
-    <p>Dont't Have Account?<a href="/manager/sign-up">SignUp</a></p>
+    <form #myForm="ngForm" (submit)="managerLogin(myForm)">
+        <div class="mb-3">
+            <p>Manager Login</p>
+            <input ngModel name="username" type="text" class="form-control" id="exampleFormControlInput1"
+                placeholder="username">
+            <input ngModel name="password" type="password" class="form-control" id="exampleFormControlInput1"
+                placeholder="password">
+        </div>
+        <button type="submit" class="btn btn-success">Log In</button>
+        <p>Dont't Have Account?<a href="/manager/sign-up">SignUp</a></p>
+    </form>
 </div>

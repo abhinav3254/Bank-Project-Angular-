@@ -57,29 +57,37 @@
                 <!-- Multiple Options -->
 
                 <li>
-                    <button style="margin: 0; padding: 0;" mat-button [matMenuTriggerFor]="animals">Animal
-                        index</button>
+                    <button style="margin: 0; padding: 0;" mat-button [matMenuTriggerFor]="animals">Manager</button>
                     <mat-menu #animals="matMenu">
-                        <button mat-menu-item [matMenuTriggerFor]="vertebrates">Vertebrates</button>
-                        <button mat-menu-item [matMenuTriggerFor]="invertebrates">Invertebrates</button>
+                        <button mat-menu-item [matMenuTriggerFor]="vertebrates">Loan Check</button>
+                        <button mat-menu-item [matMenuTriggerFor]="account">Account</button>
+                        <button mat-menu-item [matMenuTriggerFor]="loan">Loan</button>
+                    </mat-menu>
+
+                    <!-- For Loan -->
+                    <mat-menu #loan="matMenu">
+                        <button mat-menu-item>Personal Loan</button>
+                        <button mat-menu-item>Vehicle Loan</button>
+                        <button mat-menu-item>Mortgage Loan</button>
+                        <button mat-menu-item>Student Loan</button>
+                        <button mat-menu-item>Agriculture Loan</button>
                     </mat-menu>
 
                     <mat-menu #vertebrates="matMenu">
                         <button mat-menu-item [matMenuTriggerFor]="fish">Fishes</button>
                         <button mat-menu-item [matMenuTriggerFor]="amphibians">Amphibians</button>
-                        <button mat-menu-item [matMenuTriggerFor]="reptiles">Reptiles</button>
+                        <!-- <button mat-menu-item [matMenuTriggerFor]="reptiles">Reptiles</button>
                         <button mat-menu-item>Birds</button>
-                        <button mat-menu-item>Mammals</button>
+                        <button mat-menu-item>Mammals</button> -->
                     </mat-menu>
 
-                    <mat-menu #invertebrates="matMenu">
-                        <button mat-menu-item>Insects</button>
-                        <button mat-menu-item>Molluscs</button>
-                        <button mat-menu-item>Crustaceans</button>
-                        <button mat-menu-item>Corals</button>
-                        <button mat-menu-item>Arachnids</button>
-                        <button mat-menu-item>Velvet worms</button>
-                        <button mat-menu-item>Horseshoe crabs</button>
+                    <mat-menu #account="matMenu">
+                        <button mat-menu-item>
+                            <a class="a-disable" href="/manager/current-account-request">Current Account Request</a>
+                        </button>
+                        <button mat-menu-item>
+                            <a class="a-disable" href="/manager/saving-account-request">Saving Account Request</a>
+                        </button>
                     </mat-menu>
 
                     <mat-menu #fish="matMenu">

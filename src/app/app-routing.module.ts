@@ -20,6 +20,8 @@ import { ManagerListComponent } from './components/admin/manager-list/manager-li
 import { OpenSavingsAccountComponent } from './components/accounts/open-savings-account/open-savings-account.component';
 import { OpenCurrentAccountsComponent } from './components/accounts/open-current-accounts/open-current-accounts.component';
 import { GiftCardStoreComponent } from './components/accounts/gift-card-store/gift-card-store.component';
+import { SavingAccountRequestComponent } from './components/manager/saving-account-request/saving-account-request.component';
+import { CurrentAccountRequestComponent } from './components/manager/current-account-request/current-account-request.component';
 
 const routes: Routes = [
   {
@@ -90,6 +92,14 @@ const routes: Routes = [
   {
     path: 'manager/modify-gift-card',
     component: ModifyGiftCardComponent
+  },
+  {
+    path: 'manager/saving-account-request',
+    component: SavingAccountRequestComponent
+  },
+  {
+    path: 'manager/current-account-request',
+    component: CurrentAccountRequestComponent
   },
   // admin
   {
