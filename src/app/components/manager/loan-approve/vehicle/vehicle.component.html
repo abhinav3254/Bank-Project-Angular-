@@ -1,19 +1,42 @@
-<p>vehicle works Approve!</p>
-<div class="conatiner">
+<div style="text-align: center;">
+    <h1>Approve Vehicle Loan</h1>
+</div>
+<div class="conatiner" *ngFor="let l of loans">
     <mat-accordion class="one-one">
         <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
             <mat-expansion-panel-header>
                 <mat-panel-title>
-                    Request Id:
+                    Request Id: {{l.id}}
                 </mat-panel-title>
                 <mat-panel-description>
                     tap to {{panelOpenState ? 'close' : 'open'}}
                 </mat-panel-description>
             </mat-expansion-panel-header>
-            <p>request.user.name</p>
-            <p>request.profession</p>
-            <p>request.sourceOfIncome</p>
-            <p>request.dateOfApply</p>
+            <div class="list-details">
+                <div class="list-details-left">
+                    <p>Request By :- {{l.fullName}}</p>
+                    <p>Request Amount :- {{l.amount}}</p>
+                    <p>Request Gender :- {{l.user.gender}}</p>
+                    <p>Request Email :- {{l.email}}</p>
+                    <p>Request Phone :- {{l.mobile}}</p>
+                    <p>Request Mother Name :- {{l.mother}}</p>
+                    <div style="text-align: center;" *ngIf="!l.status">
+                        <button type="button" class="btn btn-success">Approve</button>
+                    </div>
+                </div>
+                <div class="list-details-right">
+                    <p>Request On :- {{l.dateOfApply|date}}</p>
+                    <p>Request relationship :- {{l.relationship}}</p>
+                    <p>Request Category :- {{l.category}}</p>
+                    <p>Request PAN :- {{l.pan}}</p>
+                    <p>Request Aadhar :- {{l.aadhar}}</p>
+                    <p>Request username :- {{l.user.username}}</p>
+                    <div style="text-align: center;" *ngIf="l.status">
+                        <button type="button" class="btn btn-warning">Approved</button>
+                    </div>
+                </div>
+            </div>
+
         </mat-expansion-panel>
     </mat-accordion>
 </div>

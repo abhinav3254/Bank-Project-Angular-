@@ -1,9 +1,20 @@
 .conatiner {
-    margin: 5rem;
+    margin: 1rem 5rem;
 }
 
-.one-one {
-    margin: 2rem;
+
+.list-details {
+    display: flex;
+    flex-direction: row;
+}
+
+.list-details-left {
+    width: 50%;
+}
+
+.list-details-right {
+    width: 50%;
+
 }
 
 .mat-mdc-form-field+.mat-mdc-form-field {
