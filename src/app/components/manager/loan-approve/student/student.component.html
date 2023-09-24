@@ -21,7 +21,7 @@
                     <p>Request Phone :- {{l.mobile}}</p>
                     <p>Request Mother Name :- {{l.mother}}</p>
                     <div style="text-align: center;" *ngIf="!l.status">
-                        <button type="button" class="btn btn-success">Approve</button>
+                        <button type="button" (click)="approveLoan(l.id)" class="btn btn-success">Approve</button>
                     </div>
                 </div>
                 <div class="list-details-right">

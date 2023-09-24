@@ -32,4 +32,11 @@ export class LoanApproveService {
     return this.http.get(url, { headers: header });
   }
 
+  public approveLoan(id: any) {
+    const body = {};
+    var header = new HttpHeaders().set("Authorization", "Bearer " + window.localStorage.getItem("token"));
+    const url = 'http://localhost:9092/loan/approve-loan/' + id;
+    return this.http.patch(url, body, { headers: header });
+  }
+
 }

@@ -25,6 +25,23 @@ export class VehicleComponent implements OnInit {
     );
   }
 
+  public approveLoan(id: any) {
+    this.loanApproveService.approveLoan(id).subscribe(
+
+      (res) => {
+
+      }, error => { // second parameter is to listen for error
+        console.log(error);
+        console.log(error.status);
+        if (error.status == 200) {
+          alert('Approved vehicle loan');
+          window.location.reload();
+        } else {
+          alert("try after somethime");
+        }
+      });
+  }
+
 }
 
 
