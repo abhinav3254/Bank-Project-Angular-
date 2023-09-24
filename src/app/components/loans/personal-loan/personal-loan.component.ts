@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { LoanService } from '../loan.service';
 
 @Component({
   selector: 'app-personal-loan',
@@ -50,9 +51,21 @@ export class PersonalLoanComponent {
   ];
 
 
-  public applyForLoan(MyForm: NgForm) {
-    console.log(MyForm.value);
+  constructor(private loanService: LoanService) { }
 
+  public applyForLoan(MyForm: NgForm) {
+    this.loanService.applyForPersonalLoan(MyForm.value).subscribe(
+      (res) => {
+
+      }, error => { // second parameter is to listen for error
+        console.log(error);
+        console.log(error.status);
+        if (error.status == 200) {
+          alert('submited personal loan');
+        } else {
+          alert("try after somethime");
+        }
+      });
   }
 }
 
