@@ -1,1 +1,21 @@
-<p>get-all-pending-locker works!</p>
+<div class="container">
+    <div class="lockers-class" *ngFor="let locker of lockers">
+        <mat-accordion>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Locker Id : - {{locker.id}}
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        Tap to {{panelOpenState ? 'close' : 'open'}}
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+
+                <p>Locker User :- {{locker.user?.name}}</p>
+                <div style="text-align: center;">
+                    <button (click)="goToFunction(locker.id)" type="button" class="btn btn-success">Book Now</button>
+                </div>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>
+</div>

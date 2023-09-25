@@ -49,6 +49,10 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
+                        <li><a class="dropdown-item" href="/customer/get-all-locker">See Lockers</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
                         <li><a class="dropdown-item" href="#">My Gift Cards</a></li>
 
                     </ul>
@@ -90,7 +94,8 @@
                     <mat-menu #locker="matMenu">
                         <button mat-menu-item><a class="a-disable" href="/manager/add-locker">Add
                                 Locker</a></button>
-                        <button mat-menu-item><a class="a-disable">Approve Locker</a></button>
+                        <button mat-menu-item><a class="a-disable" href="/manager/approve-locker-request">Approve
+                                Locker</a></button>
                     </mat-menu>
 
                     <mat-menu #account="matMenu">

@@ -54,7 +54,6 @@ import { AddLockerComponent } from './components/lockers/add-locker/add-locker.c
 import { ApplyLockerComponent } from './components/lockers/apply-locker/apply-locker.component';
 import { GetAllLockerComponent } from './components/lockers/get-all-locker/get-all-locker.component';
 import { GetAllPendingLockerComponent } from './components/lockers/get-all-pending-locker/get-all-pending-locker.component';
-import { ApprovePendingLockerComponent } from './components/lockers/approve-pending-locker/approve-pending-locker.component';
 
 
 
@@ -98,7 +97,6 @@ import { ApprovePendingLockerComponent } from './components/lockers/approve-pend
     ApplyLockerComponent,
     GetAllLockerComponent,
     GetAllPendingLockerComponent,
-    ApprovePendingLockerComponent,
   ],
   imports: [
     BrowserModule,

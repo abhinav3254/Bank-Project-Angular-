@@ -30,6 +30,9 @@ import { VehicleComponent } from './components/manager/loan-approve/vehicle/vehi
 import { StudentComponent } from './components/manager/loan-approve/student/student.component';
 import { HomeApproveComponent } from './components/manager/loan-approve/home-approve/home-approve.component';
 import { AddLockerComponent } from './components/lockers/add-locker/add-locker.component';
+import { GetAllLockerComponent } from './components/lockers/get-all-locker/get-all-locker.component';
+import { ApplyLockerComponent } from './components/lockers/apply-locker/apply-locker.component';
+import { GetAllPendingLockerComponent } from './components/lockers/get-all-pending-locker/get-all-pending-locker.component';
 
 
 const routes: Routes = [
@@ -44,6 +47,14 @@ const routes: Routes = [
   {
     path: 'customer/sign-up',
     component: SignupComponent
+  },
+  {
+    path: 'customer/get-all-locker',
+    component: GetAllLockerComponent
+  },
+  {
+    path: 'customer/apply-locker',
+    component: ApplyLockerComponent
   },
   {
     path: 'customer/transfer-funds',
@@ -105,6 +116,10 @@ const routes: Routes = [
   {
     path: 'manager/login-in',
     component: ManagerLogInComponent
+  },
+  {
+    path: 'manager/approve-locker-request',
+    component: GetAllPendingLockerComponent
   },
   {
     path: 'manager/sign-up',

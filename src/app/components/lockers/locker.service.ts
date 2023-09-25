@@ -34,7 +34,7 @@ export class LockerService {
   }
 
   public approvePendingLocker(id: any) {
-    const url = this.baseUrl + '/approve-pending-locker/' + id;
+    const url = 'http://localhost:9092/locker/approve-pending-locker/' + id;
     var header = new HttpHeaders().set("Authorization", "Bearer " + window.localStorage.getItem("token"));
     return this.http.patch(url, {}, { headers: header });
   }

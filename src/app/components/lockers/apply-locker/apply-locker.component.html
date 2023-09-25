@@ -1,1 +1,32 @@
-<p>apply-locker works!</p>
+<div class="container">
+    <form #MyFrom="ngForm" (submit)="submitForm(MyFrom)">
+        <div class="form-one">
+            <p>
+                <mat-form-field class="expand-element" appearance="outline">
+                    <mat-label>Locker Id</mat-label>
+                    <input readonly matInput value="{{lockerId}}" placeholder="lockerId" [ngModel]="lockerId"
+                        name="lockerId">
+                    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field class="expand-element" appearance="outline">
+                    <mat-label>Nominee Name</mat-label>
+                    <input matInput placeholder="lockerId" ngModel name="nomineeName">
+                    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field class="expand-element" appearance="outline">
+                    <mat-label>Tenure</mat-label>
+                    <input type="number" matInput placeholder="tenure" ngModel name="tenure">
+                    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                </mat-form-field>
+            </p>
+
+        </div>
+        <div style="text-align: center;">
+            <button type="submit" class="btn btn-success">Book Now</button>
+        </div>
+    </form>
+</div>
