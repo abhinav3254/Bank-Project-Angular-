@@ -1,0 +1,26 @@
+<p>add-locker works!</p>
+
+<div class="conatiner">
+    <form #MyForm="ngForm" (submit)="submitForm(MyForm)">
+        <div class="form-1">
+            <p>
+                <mat-form-field appearance="outline" class="expand">
+                    <mat-label>Enter Price For Locker</mat-label>
+                    <input ngModel name="money" matInput placeholder="Placeholder">
+                    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                </mat-form-field>
+            </p>
+            <mat-form-field class="expand">
+                <mat-label>Select me</mat-label>
+                <mat-select ngModel name="size">
+                    <mat-option value="option">Small</mat-option>
+                    <mat-option value="option">Medium</mat-option>
+                    <mat-option value="option">Large</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div style="text-align: center;">
+            <button type="submit" class="btn btn-success">Success</button>
+        </div>
+    </form>
+</div>

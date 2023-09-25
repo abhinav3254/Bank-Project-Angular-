@@ -62,6 +62,7 @@
                         <button mat-menu-item [matMenuTriggerFor]="vertebrates">Loan Check</button>
                         <button mat-menu-item [matMenuTriggerFor]="account">Account</button>
                         <button mat-menu-item [matMenuTriggerFor]="loan">Loan</button>
+                        <button mat-menu-item [matMenuTriggerFor]="locker">Locker</button>
                     </mat-menu>
 
                     <!-- For Loan -->
@@ -82,6 +83,14 @@
                         <!-- <button mat-menu-item [matMenuTriggerFor]="reptiles">Reptiles</button>
                         <button mat-menu-item>Birds</button>
                         <button mat-menu-item>Mammals</button> -->
+                    </mat-menu>
+
+                    <!-- for locker -->
+
+                    <mat-menu #locker="matMenu">
+                        <button mat-menu-item><a class="a-disable" href="/manager/add-locker">Add
+                                Locker</a></button>
+                        <button mat-menu-item><a class="a-disable">Approve Locker</a></button>
                     </mat-menu>
 
                     <mat-menu #account="matMenu">
@@ -151,7 +160,7 @@
                             <hr class="dropdown-divider">
                         </li>
 
-                        <li><a class="dropdown-item" href="#">Locker Rent</a></li>
+                        <li><a class="dropdown-item" href="#">Your Locker</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>

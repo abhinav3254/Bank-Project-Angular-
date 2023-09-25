@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { AddInsuranceComponent } from './components/insurance/add-insurance/add-insurance.component';
 import { LoginComponent } from './components/users/login/login.component';
 import { SignupComponent } from './components/users/signup/signup.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -51,6 +50,11 @@ import { VehicleComponent } from './components/manager/loan-approve/vehicle/vehi
 import { StudentComponent } from './components/manager/loan-approve/student/student.component';
 import { PersonalComponent } from './components/manager/loan-approve/personal/personal.component';
 import { HomeApproveComponent } from './components/manager/loan-approve/home-approve/home-approve.component';
+import { AddLockerComponent } from './components/lockers/add-locker/add-locker.component';
+import { ApplyLockerComponent } from './components/lockers/apply-locker/apply-locker.component';
+import { GetAllLockerComponent } from './components/lockers/get-all-locker/get-all-locker.component';
+import { GetAllPendingLockerComponent } from './components/lockers/get-all-pending-locker/get-all-pending-locker.component';
+import { ApprovePendingLockerComponent } from './components/lockers/approve-pending-locker/approve-pending-locker.component';
 
 
 
@@ -61,7 +65,6 @@ import { HomeApproveComponent } from './components/manager/loan-approve/home-app
     NavBarComponent,
     HomeComponent,
     FooterComponent,
-    AddInsuranceComponent,
     LoginComponent,
     SignupComponent,
     TransferFundsComponent,
@@ -91,6 +94,11 @@ import { HomeApproveComponent } from './components/manager/loan-approve/home-app
     StudentComponent,
     PersonalComponent,
     HomeApproveComponent,
+    AddLockerComponent,
+    ApplyLockerComponent,
+    GetAllLockerComponent,
+    GetAllPendingLockerComponent,
+    ApprovePendingLockerComponent,
   ],
   imports: [
     BrowserModule,

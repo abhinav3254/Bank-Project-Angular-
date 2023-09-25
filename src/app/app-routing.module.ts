@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
-import { AddInsuranceComponent } from './components/insurance/add-insurance/add-insurance.component';
 import { LoginComponent } from './components/users/login/login.component';
 import { SignupComponent } from './components/users/signup/signup.component';
 import { TransferFundsComponent } from './components/users/transfer-funds/transfer-funds.component';
@@ -30,16 +29,13 @@ import { PersonalComponent } from './components/manager/loan-approve/personal/pe
 import { VehicleComponent } from './components/manager/loan-approve/vehicle/vehicle.component';
 import { StudentComponent } from './components/manager/loan-approve/student/student.component';
 import { HomeApproveComponent } from './components/manager/loan-approve/home-approve/home-approve.component';
+import { AddLockerComponent } from './components/lockers/add-locker/add-locker.component';
 
 
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent
-  },
-  {
-    path: 'add-insurance',
-    component: AddInsuranceComponent
   },
   {
     path: 'customer/login',
@@ -102,6 +98,10 @@ const routes: Routes = [
     component: StudentloanComponent
   },
   // Manager path should come here
+  {
+    path: 'manager/add-locker',
+    component: AddLockerComponent
+  },
   {
     path: 'manager/login-in',
     component: ManagerLogInComponent
