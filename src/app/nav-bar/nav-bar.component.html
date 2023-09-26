@@ -60,6 +60,7 @@
 
                 <!-- Multiple Options -->
 
+
                 <li>
                     <button style="margin: 0; padding: 0;" mat-button [matMenuTriggerFor]="animals">Manager</button>
                     <mat-menu #animals="matMenu">
@@ -67,6 +68,7 @@
                         <button mat-menu-item [matMenuTriggerFor]="account">Account</button>
                         <button mat-menu-item [matMenuTriggerFor]="loan">Loan</button>
                         <button mat-menu-item [matMenuTriggerFor]="locker">Locker</button>
+                        <button mat-menu-item [matMenuTriggerFor]="giftcard">Gift Card</button>
                     </mat-menu>
 
                     <!-- For Loan -->
@@ -104,6 +106,16 @@
                         </button>
                         <button mat-menu-item>
                             <a class="a-disable" href="/manager/saving-account-request">Saving Account Request</a>
+                        </button>
+                    </mat-menu>
+
+                    <!-- For gift-card -->
+
+                    <mat-menu #giftcard="matMenu">
+                        <button mat-menu-item>
+                            <!-- /manager/add-gift-card -->
+
+                            <a class="a-disable" href="/manager/add-gift-card">Add Gift Card</a>
                         </button>
                     </mat-menu>
 
