@@ -39,4 +39,10 @@ export class LockerService {
     return this.http.patch(url, {}, { headers: header });
   }
 
+  public yourLocker() {
+    const url = 'http://localhost:9092/locker/get-all-locker-of-user';
+    var header = new HttpHeaders().set("Authorization", "Bearer " + window.localStorage.getItem("token"));
+    return this.http.get(url, { headers: header });
+  }
+
 }

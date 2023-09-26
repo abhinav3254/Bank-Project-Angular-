@@ -33,6 +33,7 @@ import { AddLockerComponent } from './components/lockers/add-locker/add-locker.c
 import { GetAllLockerComponent } from './components/lockers/get-all-locker/get-all-locker.component';
 import { ApplyLockerComponent } from './components/lockers/apply-locker/apply-locker.component';
 import { GetAllPendingLockerComponent } from './components/lockers/get-all-pending-locker/get-all-pending-locker.component';
+import { YourLockersComponent } from './components/lockers/your-lockers/your-lockers.component';
 
 
 const routes: Routes = [
@@ -107,6 +108,10 @@ const routes: Routes = [
   {
     path: 'customer/apply-student-loan',
     component: StudentloanComponent
+  },
+  {
+    path: 'customer/your-locker',
+    component: YourLockersComponent
   },
   // Manager path should come here
   {
