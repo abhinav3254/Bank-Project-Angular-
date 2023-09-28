@@ -4,10 +4,44 @@
             <div class="show-balance">
                 <img src="assets/icons/visa-svgrepo-com.svg" alt="">
                 <div class="right">
-                    <p>username</p>
-                    <p>Account Holder</p>
-                    <p>Account Number</p>
-                    <p>₹ 25,000</p>
+                    <!-- Assuming this code is within an Angular template or an HTML file -->
+
+                    <div *ngIf="account">
+                        <!-- Generate <p></p> elements for Account properties -->
+                        <p>ID: {{ account.id }}</p>
+                        <p>Amount: {{ account.amount }}</p>
+                        <p>Account Created Date: {{ account.accountCreatedDate|date }}</p>
+                        <p>Account Number: {{ account.accountNumber }}</p>
+
+                        <!-- Generate <p></p> elements for User properties -->
+                        <p>User ID: {{ account.user.id }}</p>
+                        <p>Username: {{ account.user.username }}</p>
+                        <p>Name: {{ account.user.name }}</p>
+                        <p>Email: {{ account.user.email }}</p>
+                        <p>Password: {{ account.user.password }}</p>
+                        <p>Phone: {{ account.user.phone }}</p>
+                        <p>Address: {{ account.user.address }}</p>
+                        <p>Status: {{ account.user.status }}</p>
+                        <p>Role: {{ account.user.role }}</p>
+                        <p>Gender: {{ account.user.gender }}</p>
+                        <p>Register Date: {{ account.user.registerDate|date }}</p>
+                        <p>Last Login: {{ account.user.lastLogin }}</p>
+
+                        <!-- Generate <p></p> elements for ApplicationsForms properties -->
+                        <p>ApplicationsForms ID: {{ account.applicationsForms.id }}</p>
+                        <p>Category: {{ account.applicationsForms.category }}</p>
+                        <p>Mobile: {{ account.applicationsForms.mobile }}</p>
+                        <p>Email: {{ account.applicationsForms.email }}</p>
+                        <p>PAN: {{ account.applicationsForms.pan }}</p>
+                        <p>Aadhar: {{ account.applicationsForms.aadhar }}</p>
+                        <p>Mother: {{ account.applicationsForms.mother }}</p>
+                        <p>Annual Income: {{ account.applicationsForms.annualIncome }}</p>
+                        <p>Profession: {{ account.applicationsForms.profession }}</p>
+                        <p>Source of Income: {{ account.applicationsForms.sourceOfIncome }}</p>
+                        <p>Status: {{ account.applicationsForms.status }}</p>
+                        <p>Date of Apply: {{ account.applicationsForms.dateOfApply|date }}</p>
+                    </div>
+
                 </div>
             </div>
         </mat-card-content>
