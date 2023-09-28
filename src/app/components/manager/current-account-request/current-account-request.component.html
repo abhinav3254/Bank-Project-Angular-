@@ -13,6 +13,10 @@
             <p>{{request.profession}}</p>
             <p>{{request.sourceOfIncome}}</p>
             <p>{{request.dateOfApply | date}}</p>
+            <div style="text-align: center;">
+                <button type="button" (click)="approveCurrentAccount(request.id)"
+                    class="btn btn-success">Approve</button>
+            </div>
         </mat-expansion-panel>
     </mat-accordion>
 </div>

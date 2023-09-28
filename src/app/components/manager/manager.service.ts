@@ -25,4 +25,16 @@ export class ManagerService {
     const url = 'http://localhost:9092/applications-form/applications/current-accounts';
     return this.http.get(url, { headers: header });
   }
+
+  public approveSavingsAccount(id: any): Observable<any> {
+    var header = new HttpHeaders().set("Authorization", "Bearer " + window.localStorage.getItem("token"));
+    const url = 'http://localhost:9092/applications-form/approve-savings-accounts/' + id;
+    return this.http.get(url, { headers: header });
+  }
+
+  public approveCurrentAccount(id: any): Observable<any> {
+    var header = new HttpHeaders().set("Authorization", "Bearer " + window.localStorage.getItem("token"));
+    const url = 'http://localhost:9092/applications-form/approve-current-accounts/' + id;
+    return this.http.get(url, { headers: header });
+  }
 }

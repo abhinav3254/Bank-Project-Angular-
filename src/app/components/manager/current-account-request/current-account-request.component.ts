@@ -18,6 +18,21 @@ export class CurrentAccountRequestComponent implements OnInit {
       }
     );
   }
+
+  approveCurrentAccount(id: any) {
+    this.managerService.approveCurrentAccount(id).subscribe(
+      (res) => {
+
+      }, error => { // second parameter is to listen for error
+        // console.log(error);
+        // console.log(error.status);
+        if (error.status == 200) {
+          alert("welcome!" + error.text);
+        } else {
+          alert(error.text);
+        }
+      });
+  }
 }
 
 export interface SavingAccountRequests {
